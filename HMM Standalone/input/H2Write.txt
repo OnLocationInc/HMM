@@ -1,0 +1,142 @@
+par=HMMBLK_CO2CAPFUEL rng=CO2_Captured_by_Fuel!A2
+par=HMMBLK_H2Fuel rng=Direct_Fuel_Consumption!A2
+par=QBLK_QELHM rng=Electricity_Consumption!A2
+par=HMMBLK_HMBIPRD rng=H2_Production_from_Biomass!A2
+par=HMMBLK_HMCLPRD rng=H2_Production_from_Coal!A2
+par=HMMBLK_HMELPRD rng=H2_Production_from_Electricity!A2
+par=HMMBLK_HMGSPRD rng=H2_Production_from_Natural_Gas!A2
+par=HMMBLK_HMPRODSEQ rng=H2_Production_w_Sequestration!A2
+par=HMMBLK_PHMM rng=Hydrogen_Price!A2
+par=ProductionUnplannedCapacityPerYearAndIter rng=New_Capacity_by_Technology!A2
+par=TransportUnplannedCapacityPerYearAndIter rng=New_Transportation_Capacity!A2
+par=StorageUnplannedCapacityPerYearAndIter rng=New_Storage_Capacity!A2
+par=HydrogenProductionOpCost rng=Levelized_Operating_Cost!A2
+par=HydrogenFixedO_MCost rng=Levelized_Fixed_OM_Cost!A2
+par=HydrogenProductionCapCost rng=Levelized_Capital_Cost!A2
+par=HydrogenProductionOpCredit rng=Levelized_45V_PTC!A2
+par=HydrogenProductionInvstCredit rng=Levelized_45V_ITC!A2
+par=CO2CaptureCredit rng=Levelized_45Q_Credit!A2
+par=CO2CaptureQtybyTech rng=CO2_Captured_by_Technology!A2
+par=CO2CaptureQty45QCreditbyYear rng=CO2_Eligible_for_45Q_Credit!A2
+par=Section45VCreditbyYear rng=Capacity_with_45V_Credit!A2
+par=CapacityProductionTaxCreditbyYear rng=Capacity_eligible_for_45V_PTC!A2
+par=CapacityInvestmentTaxCreditbyYear rng=Capacity_eligible_for_45V_ITC!A2
+par=ProductionOperatePerYearAndIter rng=Production_by_Technology!A2
+par=RegionalTransportPerYearAndIter rng=Regional_Transport!A2
+par=DemandSlackPerYearAndIter rng=Solution_Slack!A2
+set=CensusRegionMap rng=Census_Regions!A3 cdim=0 rdim=2 values=string
+set=Market_Price rng=Sectors!A3 rdim=1 values=string
+htext="Fuel,Census Region" rng=CO2_Captured_by_Fuel!A2
+htext="Fuel,Census Region" rng=Direct_Fuel_Consumption!A2
+htext="Census Region" rng=Electricity_Consumption!A2
+htext="Census Region" rng=H2_Production_from_Biomass!A2
+htext="Census Region" rng=H2_Production_from_Coal!A2
+htext="Census Region" rng=H2_Production_from_Electricity!A2
+htext="Census Region" rng=H2_Production_from_Natural_Gas!A2
+htext="Fuel,Census Region" rng=H2_Production_w_Sequestration!A2
+htext="Sector,Census Region" rng=Hydrogen_Price!A2
+htext="Technology,Census Region" rng=New_Capacity_by_Technology!A2
+htext="Census Region,Census Region" rng=New_Transportation_Capacity!A2
+htext="Technology,Census Region" rng=New_Storage_Capacity!A2
+htext="Technology,Census Region" rng=Levelized_Operating_Cost!A2
+htext="Technology,Census Region" rng=Levelized_Fixed_OM_Cost!A2
+htext="Technology,Census Region" rng=Levelized_Capital_Cost!A2
+htext="Technology,Census Region" rng=Levelized_45V_PTC!A2
+htext="Technology,Census Region" rng=Levelized_45V_ITC!A2
+htext="Technology,Census Region" rng=Levelized_45Q_Credit!A2
+htext="Technology,Census Region" rng=CO2_Captured_by_Technology!A2
+htext="Technology,Census Region" rng=CO2_Eligible_for_45Q_Credit!A2
+htext="Technology,Census Region" rng=Capacity_with_45V_Credit!A2
+htext="Technology,Census Region" rng=Capacity_eligible_for_45V_PTC!A2
+htext="Technology,Census Region" rng=Capacity_eligible_for_45V_ITC!A2
+htext="Technology,Census Region" rng=Production_by_Technology!A2
+htext="Census Region,Census Region" rng=Regional_Transport!A2
+htext="Census Region,Season" rng=Solution_Slack!A2
+htext="Census Region,Division,States" rng=Census_Regions!A2
+htext="Price,Description" rng=Sectors!A2
+text="Back to index" rng=CO2_Captured_by_Fuel!A1 link=Index!A1
+text="Back to index" rng=Direct_Fuel_Consumption!A1 link=Index!A1
+text="Back to index" rng=Electricity_Consumption!A1 link=Index!A1
+text="Back to index" rng=H2_Production_from_Biomass!A1 link=Index!A1
+text="Back to index" rng=H2_Production_from_Coal!A1 link=Index!A1
+text="Back to index" rng=H2_Production_from_Electricity!A1 link=Index!A1
+text="Back to index" rng=H2_Production_from_Natural_Gas!A1 link=Index!A1
+text="Back to index" rng=H2_Production_w_Sequestration!A1 link=Index!A1
+text="Back to index" rng=Hydrogen_Price!A1 link=Index!A1
+text="Back to index" rng=New_Capacity_by_Technology!A1 link=Index!A1
+text="Back to index" rng=New_Transportation_Capacity!A1 link=Index!A1
+text="Back to index" rng=New_Storage_Capacity!A1 link=Index!A1
+text="Back to index" rng=Levelized_Operating_Cost!A1 link=Index!A1
+text="Back to index" rng=Levelized_Fixed_OM_Cost!A1 link=Index!A1
+text="Back to index" rng=Levelized_Capital_Cost!A1 link=Index!A1
+text="Back to index" rng=Levelized_45V_PTC!A1 link=Index!A1
+text="Back to index" rng=Levelized_45V_ITC!A1 link=Index!A1
+text="Back to index" rng=Levelized_45Q_Credit!A1 link=Index!A1
+text="Back to index" rng=CO2_Captured_by_Technology!A1 link=Index!A1
+text="Back to index" rng=CO2_Eligible_for_45Q_Credit!A1 link=Index!A1
+text="Back to index" rng=Capacity_with_45V_Credit!A1 link=Index!A1
+text="Back to index" rng=Capacity_eligible_for_45V_PTC!A1 link=Index!A1
+text="Back to index" rng=Capacity_eligible_for_45V_ITC!A1 link=Index!A1
+text="Back to index" rng=Production_by_Technology!A1 link=Index!A1
+text="Back to index" rng=Regional_Transport!A1 link=Index!A1
+text="Back to index" rng=Solution_Slack!A1 link=Index!A1
+text="Back to index" rng=Census_Regions!A1 link=Index!A1
+text="Back to index" rng=Sectors!A1 link=Index!A1
+text="Census Region" rng=CO2_Captured_by_Fuel!B2 link=Census_Regions!A1
+text="Census Region" rng=Direct_Fuel_Consumption!B2 link=Census_Regions!A1
+text="Census Region" rng=Electricity_Consumption!A2 link=Census_Regions!A1
+text="Census Region" rng=H2_Production_from_Biomass!A2 link=Census_Regions!A1
+text="Census Region" rng=H2_Production_from_Coal!A2 link=Census_Regions!A1
+text="Census Region" rng=H2_Production_from_Electricity!A2 link=Census_Regions!A1
+text="Census Region" rng=H2_Production_from_Natural_Gas!A2 link=Census_Regions!A1
+text="Census Region" rng=H2_Production_w_Sequestration!B2 link=Census_Regions!A1
+text="Census Region" rng=Hydrogen_Price!B2 link=Census_Regions!A1
+text="Sector" rng=Hydrogen_Price!A2 link=Sectors!A1
+text="Census Region" rng=New_Capacity_by_Technology!B2 link=Census_Regions!A1
+text="Census Region" rng=New_Transportation_Capacity!A2 link=Census_Regions!A1
+text="Census Region" rng=New_Storage_Capacity!B2 link=Census_Regions!A1
+text="Census Region" rng=Levelized_Operating_Cost!B2 link=Census_Regions!A1
+text="Census Region" rng=Levelized_Fixed_OM_Cost!B2 link=Census_Regions!A1
+text="Census Region" rng=Levelized_Capital_Cost!B2 link=Census_Regions!A1
+text="Census Region" rng=Levelized_45V_PTC!B2 link=Census_Regions!A1
+text="Census Region" rng=Levelized_45V_ITC!B2 link=Census_Regions!A1
+text="Census Region" rng=Levelized_45Q_Credit!B2 link=Census_Regions!A1
+text="Census Region" rng=CO2_Captured_by_Technology!B2 link=Census_Regions!A1
+text="Census Region" rng=CO2_Eligible_for_45Q_Credit!B2 link=Census_Regions!A1
+text="Census Region" rng=Capacity_with_45V_Credit!B2 link=Census_Regions!A1
+text="Census Region" rng=Capacity_eligible_for_45V_PTC!B2 link=Census_Regions!A1
+text="Census Region" rng=Capacity_eligible_for_45V_ITC!B2 link=Census_Regions!A1
+text="Census Region" rng=Production_by_Technology!B2 link=Census_Regions!A1
+text="Census Region" rng=Regional_Transport!A2 link=Census_Regions!A1
+text="Census Region" rng=Solution_Slack!A2 link=Census_Regions!A1
+htext="Name,Units,All prices in,,$" rng=Index!A1
+text="CO2 Captured by Fuel" rng=Index!A2 linkID=HMMBLK_CO2CAPFUEL
+text="Direct Fuel Consumption" rng=Index!A3 linkID=HMMBLK_H2Fuel
+text="Electricity Consumption" rng=Index!A4 linkID=QBLK_QELHM
+text="H2 Production from Biomass" rng=Index!A5 linkID=HMMBLK_HMBIPRD
+text="H2 Production from Coal" rng=Index!A6 linkID=HMMBLK_HMCLPRD
+text="H2 Production from Electricity" rng=Index!A7 linkID=HMMBLK_HMELPRD
+text="H2 Production from Natural Gas" rng=Index!A8 linkID=HMMBLK_HMGSPRD
+text="H2 Production using Sequestration" rng=Index!A9 linkID=HMMBLK_HMPRODSEQ
+text="Hydrogen Price" rng=Index!A10 linkID=HMMBLK_PHMM
+text="New Capacity by Technology" rng=Index!A11 linkID=ProductionUnplannedCapacityPerYearAndIter
+text="New Transportation Capacity" rng=Index!A12 linkID=TransportUnplannedCapacityPerYearAndIter
+text="New Storage Capacity" rng=Index!A13 linkID=StorageUnplannedCapacityPerYearAndIter
+text="Levelized Operating Cost" rng=Index!A14 linkID=HydrogenProductionOpCost
+text="Levelized Fixed O&M Cost" rng=Index!A15 linkID=HydrogenFixedO_MCost
+text="Levelized Capital Cost" rng=Index!A16 linkID=HydrogenProductionCapCost
+text="Levelized 45V PTC" rng=Index!A17 linkID=HydrogenProductionOpCredit
+text="Levelized 45V ITC" rng=Index!A18 linkID=HydrogenProductionInvstCredit
+text="Levelized 45Q Credit" rng=Index!A19 linkID=CO2CaptureCredit
+text="CO2 Captured by Technology" rng=Index!A20 linkID=CO2CaptureQtybyTech
+text="CO2 Eligible for 45Q Credit" rng=Index!A21 linkID=CO2CaptureQty45QCreditbyYear
+text="Capacity eligible for 45V Credit" rng=Index!A22 linkID=Section45VCreditbyYear
+text="Capacity eligible for 45V PTC" rng=Index!A23 linkID=CapacityProductionTaxCreditbyYear
+text="Capacity eligible for 45V ITC" rng=Index!A24 linkID=CapacityInvestmentTaxCreditbyYear
+text="Production by Technology" rng=Index!A25 linkID=ProductionOperatePerYearAndIter
+text="Regional Transport" rng=Index!A26 linkID=RegionalTransportPerYearAndIter
+text="Solution Slack" rng=Index!A27 linkID=DemandSlackPerYearAndIter
+text="Census Regions" rng=Index!A28 linkID=CensusRegionMap
+text="Demand Sectors" rng=Index!A29 linkID=Market_Price
+vtext="Mt CO2,trill Btus,trill Btus,kT H2,kT H2,kT H2,kT H2,kT H2,$/kg,kT H2,kT H2,kT H2,$/kg,$/kg,$/kg,$/kg,$/kg,$/kg,Mt CO2,Mt CO2,kT H2,kT H2,kT H2,kT H2,kT H2,$/kg" rng=Index!B2
+par=dollar_year rng=Index!D1

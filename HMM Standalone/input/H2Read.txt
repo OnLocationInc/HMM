@@ -1,0 +1,116 @@
+dset=h2prodtech rng=h2prodtech rDim=1
+dSet=h2prodtech_specs rng=h2prodtech_specs rDim=1
+par=prodtech_props rng=prodtech_props cDim=1 rDim=1
+dSet=h2transtech_specs rng=h2transtech_specs rDim=1
+par=pipetech_props rng=pipetech_props rDim=1
+dSet=h2comptech_specs rng=h2comptech_specs rDim=1
+par=comptech_props rng=comptech_props rDim=1
+dSet=h2stortech_specs rng=h2stortech_specs rDim=1
+par=stortech_props rng=stortech_props rDim=1
+set=prod_tech rng=prod_tech rDim=1
+dSet=ICR rng=ICR rDim=1
+set=CensusDiv rng=CensusDiv rDim=1
+set=CenDivOpt rng=CenDivOpt rDim=1
+dSet=IYR rng=IYR rDim=1
+dSet=NumYr rng=NumYr rDim=1
+dset=GDPYears rng=GDPYears rDim=1
+dset=CalYears rng=CalYears rDim=1
+set=GDPYearMap rng=GDPYearMap cdim=0 rdim=2
+set=CalYearMap rng=CalYearMap cdim=0 rdim=2
+set=NumYr_2_CalYr rng=NumYr_2_CalYr cdim=0 rdim=2
+set=capacity rng=capacity rDim=1
+dset=periods rng=periods rdim=1
+par=years_by_period rng=years_by_period rDim=1
+par=prod_cap rng=prod_cap cDim=1 rDim=3
+par=trans_cap rng=trans_cap cDim=1 rDim=3
+dset=h2stortech rng=h2stortech rDim=1
+par=stor_cap rng=stor_cap cDim=1 rDim=3
+par=lca_tech rng=lca_tech cDim=1 rDim=1
+set=coalregion rng=coalregion rdim=1
+set=coal_region_map rng=coal_region_map cdim=0 rdim=2
+set=CensusRegionMap rng=CensusRegionMap cdim=0 rdim=2
+set=CoalRegionMap rng=CoalRegionMap cdim=0 rdim=2
+dset=fuels rng=fuels rdim=1
+dset=CombustionFuels rng=CombustionFuels rdim=1
+dset=fuel_region rng=fuel_region rdim=1
+set=FuelRegion rng=FuelRegion rDim=1
+set=fuel_region_map rng=fuel_region_map cdim=0 rdim=2
+set=FuelRegion_2_MAXNFR rng=FuelRegion_2_MAXNFR cdim=0 rdim=2
+dset=steps rng=steps rdim=1
+dset=seasons rng=seasons rdim=1
+dset=SeasonOpt rng=SeasonOpt rdim=1
+set=market_quantity rng=market_quantity rdim=1
+set=Market_Quantity_EMM rng=Market_Quantity_EMM rdim=1
+set=MarketQ_2_M10 rng=MarketQ_2_M10 cdim=0 rdim=2
+set=market_quantity_code_season rng=market_quantity_code_season cdim=0 rdim=2
+set=market_price rng=market_price rdim=1
+set=Market_P_Q rng=Market_P_Q cdim=0 rdim=2
+set=production_code rng=production_code cdim=0 rdim=2
+set=census_division_links rng=census_division_links cdim=0 rdim=2
+par=storage_season_links rng=storage_season_links rDim=2
+par=season_fraction rng=season_fraction rDim=1
+par=production_step_size rng=production_step_size rDim=1
+par=production_step_size_period rng=production_step_size_period rDim=2
+par=production_step_cost_fraction rng=production_step_cost_fraction rDim=1
+par=transportation_step_size rng=transportation_step_size rDim=1
+par=transportation_step_size_period rng=transportation_step_size_period rDim=2
+par=transportation_step_cost_fraction rng=transportation_step_cost_fraction rDim=1
+par=ira_ptc rng=ira_ptc rDim=1
+par=ira_itc rng=ira_itc rDim=1
+par=ira_lca rng=ira_lca rDim=1
+par=hmm_markup rng=hmm_markup rDim=1
+par=FirstModelYear rng=FirstModelYear cDim=0 rDim=0
+par=LastModelYear rng=LastModelYear cDim=0 rDim=0
+par=DaysInYear rng=DaysInYear cDim=0 rDim=0
+par=MMBTU_to_KWH rng=MMBTU_to_KWH cDim=0 rDim=0
+par=EMRP rng=EMRP cDim=0 rDim=0
+par=Beta rng=Beta cDim=0 rDim=0
+par=HydrogenHHV rng=HydrogenHHV cDim=0 rDim=0
+par=ProductionCapacityReserve rng=ProductionCapacityReserve cDim=0 rDim=0
+par=HeatRateNuclear rng=HeatRateNuclear cDim=0 rDim=0
+par=RenewablesShareLimit rng=RenewablesShareLimit cDim=0 rDim=0
+par=NuclearShareLimit rng=NuclearShareLimit cDim=0 rDim=0
+par=ProductionGrowthLimit rng=ProductionGrowthLimit cDim=0 rDim=0
+par=I_45V_SYR rng=I_45V_SYR cDim=0 rDim=0
+par=I_45V_LYR_NEW rng=I_45V_LYR_NEW cDim=0 rDim=0
+par=I_45V_DURATION rng=I_45V_DURATION cDim=0 rDim=0
+par=I_45V_Multiplier rng=I_45V_Multiplier cDim=0 rDim=0
+par=MarketShareON rng=MarketShareON cDim=0 rDim=0
+par=MarketShareCutoff rng=MarketShareCutoff cDim=0 rDim=0
+par=MarketShareAlpha rng=MarketShareAlpha cDim=0 rDim=0
+par=DollarYear rng=DollarYear cDim=0 rDim=0
+par=MinPrice rng=MinPrice cDim=0 rDim=0
+par=SlackCost rng=SlackCost cDim=0 rDim=0
+par=NationalCR rng=NationalCR cDim=0 rDim=0
+par=StorageExpansionFraction rng=StorageExpansionFraction cDim=0 rDim=0
+par=CreateOutputXL rng=CreateOutputXL cDim=0 rDim=0
+par=CreateSQLiteDB rng=CreateSQLiteDB cDim=0 rDim=0
+par=CreateYearlyGDXFile rng=CreateYearlyGDXFile cDim=0 rDim=0
+dset=CalendarYears rng=CalendarYears rDim=1
+dset=CensusRegions rng=CensusRegions rDim=1
+par=AvgFossilFuelHeatRate rng=AvgFossilFuelHeatRate cDim=1 rDim=1
+par=BiomassEmissionsFactor rng=BiomassEmissionsFactor cDim=0 rDim=1
+dset=CoalDemandRegions rng=CoalDemandRegions rDim=1
+dset=BiomassRegions rng=BiomassRegions rDim=1
+par=BiomassPrice rng=BiomassPrice cDim=1 rDim=2
+dset=GDP_Years rng=GDP_Years rDim=1 
+par=PriceIndex_GDPChained rng=PriceIndex_GDPChained cDim=0 rDim=1
+par=CoalEmissionsFactor rng=CoalEmissionsFactor cDim=0 rDim=1
+par=IndustrialCoalPrice rng=IndustrialCoalPrice cDim=1 rDim=1
+par=Current_Iteration rng=Current_Iteration cDim=0 rDim=0
+par=CurrentCalendarYear rng=CurrentCalendarYear cDim=0 rDim=0
+par=LastYearSection45QCreditNew rng=LastYearSection45QCreditNew cDim=0 rDim=0
+par=CarbonPrice rng=CarbonPrice cDim=0 rDim=1
+par=NaturalGasEmissionsFactor rng=NaturalGasEmissionsFactor cDim=0 rDim=1
+par=IndustrialNaturalGasPrice rng=IndustrialNaturalGasPrice cDim=1 rDim=1
+par=SolarPV_Generation rng=SolarPV_Generation cDim=1 rDim=1
+par=IndustrialElectricityPrice rng=IndustrialElectricityPrice cDim=1 rDim=1
+set=DemandSectors rng=DemandSectors rDim=1
+par=HydrogenDemand rng=HydrogenDemand cDim=1 rDim=2
+par=LongTermBondRate rng=LongTermBondRate cDim=0 rDim=1
+par=Section45QCreditDuration rng=Section45QCreditDuration cDim=0 rDim=0
+par=Section45QCreditForEOR rng=Section45QCreditForEOR cDim=0 rDim=1
+par=Section45QCreditForSaline rng=Section45QCreditForSaline cDim=0 rDim=1
+par=CO2_TransportAndStorageCosts rng=CO2_TransportAndStorageCosts cDim=1 rDim=1
+par=NuclearGeneration rng=NuclearGeneration cDim=1 rDim=1
+par=WindGeneration rng=WindGeneration cDim=1 rDim=1
